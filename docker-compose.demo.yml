@@ -1,0 +1,25 @@
+services:
+  umono:
+    build:
+      context: ./umono
+      dockerfile: Dockerfile
+    volumes:
+      - ./umono.demo.db:/usr/src/app/umono.db
+      - ./.env.demo:/usr/src/app/.env
+    ports:
+      - "8999:8999"
+    networks:
+      - umono-network
+
+  admin-ui:
+    build:
+      context: ./admin-ui
+      dockerfile: Dockerfile
+    networks:
+      - umono-network
+    container_name: admin-ui
+
+networks:
+  umono-network:
+    driver: bridge
+
