@@ -1,0 +1,6 @@
+[submodule "umono"]
+	path = umono
+	url = https://github.com/umono-cms/umono
+[submodule "admin-ui"]
+	path = admin-ui
+	url = https://github.com/umono-cms/admin-ui
