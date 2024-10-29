@@ -17,3 +17,7 @@ Up
 ```
 docker compose -f docker-compose.demo.yml up
 ```
+Ready! username and password are **admin**
+```
+http://127.0.0.1:8999/admin
+```
