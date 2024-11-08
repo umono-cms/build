@@ -9,7 +9,7 @@ cd umono
 ```
 Init and update submodules
 ```
-git checkout $(git tag -l "0.*" | sort -V | tail -n 1)
+git checkout $(git tag -l "v0.*" | sort -V | tail -n 1)
 git submodule update --init --recursive
 ```
 ## Setup
@@ -31,7 +31,7 @@ docker compose -f docker-compose.prod.yml up
 Fetch last v0.x.x
 ```
 git fetch --tags
-git checkout $(git tag -l "0.*" | sort -V | tail -n 1)
+git checkout $(git tag -l "v0.*" | sort -V | tail -n 1)
 git submodule update --init --recursive
 ```
 Down & Up
