@@ -210,3 +210,5 @@ docs/_book
 test/
 
 # End of https://www.toptal.com/developers/gitignore/api/vim,linux,go,node,vue
+
+umono.db
