@@ -27,6 +27,9 @@ Up
 ```
 docker compose -f docker-compose.prod.yml up
 ```
+Ready!
+
+Go to `/admin` and create your first page!
 ## Update
 Fetch last v0.x.x
 ```
@@ -36,8 +39,8 @@ git submodule update --init --recursive
 ```
 Down & Up
 ```
-docker compose -f docker-compose.prod.yml down
-docker compose -f docker-compose.prod.yml up
+docker compose -f docker-compose.prod.yml down --remove-orphans
+docker compose -f docker-compose.prod.yml up -d --build
 ```
 # Demo
 Requires *git* and *docker*
