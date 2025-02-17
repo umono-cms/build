@@ -23,6 +23,8 @@ cp ./umono/.env-example ./.env
 ```
 Edit **.env** file to set username and password. These will be hashed when first run.
 
+**SECRET** environment variable is optional. If it is empty, Umono will generate it for you on runtime.
+
 Up
 ```
 docker compose -f docker-compose.prod.yml up
