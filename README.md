@@ -59,6 +59,10 @@ Init and update submodules
 git checkout $(git tag -l "v0.*" | sort -V | tail -n 1)
 git submodule update --init --recursive
 ```
+Fetch last demo DB
+```
+git show origin/main:umono.demo.db > umono.demo.db
+```
 Up
 ```
 docker compose -f docker-compose.demo.yml up --build --force-recreate
